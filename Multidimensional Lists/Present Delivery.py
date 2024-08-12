@@ -11,6 +11,7 @@ def get_present_positions(r, c, sze):
             result.append([row, col])
     return result
 
+
 presents = int(input())
 
 size = int(input())
@@ -79,7 +80,4 @@ for row in matrix:
 if nice_kids > 0:
     print(f"No presents for {nice_kids} nice kid/s.")
 if nice_kids == 0:
-        print(f"Good job, Santa! {nice_kids_total} happy nice kid/s.")
-
-
-
+    print(f"Good job, Santa! {nice_kids_total} happy nice kid/s.")

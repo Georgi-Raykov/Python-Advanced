@@ -6,7 +6,6 @@ stations = deque()
 for _ in range(pomps):
     stations.append([int(x) for x in input().split()])
 
-
 for i in range(pomps):
     tank = 0
     is_failed = False

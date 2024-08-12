@@ -1,19 +1,16 @@
-def get_position(pos,r, c, mtx):
+def get_position(pos, r, c, mtx):
     if pos == 'up':
         if 0 <= r - 1 < len(mtx):
             r = r - 1
-
     elif pos == 'right':
-            if 0 <= c + 1 < len(mtx):
-                c = c + 1
-
+        if 0 <= c + 1 < len(mtx):
+            c = c + 1
     elif pos == 'left':
-            if 0 <= c - 1 < len(mtx):
-                c = c - 1
-
+        if 0 <= c - 1 < len(mtx):
+            c = c - 1
     elif pos == 'down':
-            if 0 <= r + 1 < len(mtx):
-                r = r + 1
+        if 0 <= r + 1 < len(mtx):
+            r = r + 1
     return [r, c]
 
 
@@ -36,7 +33,7 @@ for row in range(size):
             coals += 1
 is_end = False
 for direction in commands:
-    position= get_position(direction, row_position, col_position, matrix)
+    position = get_position(direction, row_position, col_position, matrix)
     matrix[row_position][col_position] = '*'
     if matrix[position[0]][position[1]] == 'c':
         collected_coals += 1

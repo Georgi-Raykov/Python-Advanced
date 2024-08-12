@@ -21,12 +21,9 @@ while bees and nectars:
 
         total += abs(operators[act](bee, nectar))
 
-
-
 print(f"Total honey made: {total}")
 
 if bees:
     print(*bees, sep=', ')
 if nectars:
-
     print(*nectars, sep=', ')
